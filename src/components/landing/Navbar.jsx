@@ -1,20 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <header className="flex container">
-      <span>
-        <div>
-          <img src="/vite.svg" alt="logo" />
-          {/* <h3>expTRk</h3> */}
-        </div>
+      <span className="logo flex">
+        <img src="/vite.svg" alt="logo" />
+        <span>Exp Tracker</span>
       </span>
       <nav>
         <ul className="header-nav flex">
-          <li>SERVICES</li>
-          <li>ABOUT US</li>
+          <li><a href="#home"> HOME</a></li>
+          <li><a href="#about"> ABOUT US</a></li>
+          <li><a href="#service">SERVICES</a></li>
           <li>
-            <button>Sign in</button>
+            <Link to='/auth/login'>Sign in</Link>
           </li>
         </ul>
       </nav>
