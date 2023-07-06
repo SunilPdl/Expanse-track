@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LandingPage from "../pages/LandingPage";
+import Login from "../pages/authentication/Login";
+import Register from "../pages/authentication/Register";
 
 const ExpenseRoute = () => {
   return (
@@ -20,8 +22,8 @@ const ExpenseRoute = () => {
 const AuthRoutes = () => {
   return (
     <Routes>
-      <Route path="login" element={<h1>login</h1>} />;
-      <Route path="register" element={<h1>register</h1>} />;
+      <Route path="login" element={<Login />} />;
+      <Route path="register" element={<Register />} />;
       <Route path="*" element={<h1>page not found</h1>} />;
     </Routes>
   );
