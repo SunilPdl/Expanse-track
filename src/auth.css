@@ -1,0 +1,26 @@
+.authentication-wrapper {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+.authentication-div {
+  flex-direction: column;
+  gap: 2em;
+  background-color: white;
+  width: fit-content;
+  padding: 1.5em;
+  border: 3px solid var(--color-dark)
+}
+
+.back-btn {
+  position: fixed;
+  top: 30px;
+  left: 50px;
+}
+
+.back-btn svg {
+  width: 5em;
+  height: 5em;
+  stroke: var(--color-primary);
+}
