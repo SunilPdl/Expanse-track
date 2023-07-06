@@ -1,63 +1,100 @@
-::-webkit-scrollbar{
-  width:1em;
+::-webkit-scrollbar {
+  width: .5em;
   background-color: black;
 }
 
- ::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: darkcyan;
 }
 
-header{
+header {
   max-width: 85%;
-  margin: 0 auto !important; 
+  margin: 0 auto !important;
 }
 
-ul{
+.logo>span {
+  font-weight: 700;
+}
+
+ul {
   list-style: none;
-    padding: 0;
+  padding: 0;
 }
 
-.header-nav{
+.header-nav {
   gap: 3em;
 
 }
 
-.flex{
+.flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.container{
+.container {
   max-width: 85%;
   margin: 0 auto;
 }
 
-.hero-image{
+.hero-section {
+  text-align: center;
+}
+
+.hero-image {
   width: 500px;
   height: 500px;
 }
 
-.services-list img{
+.services-list img {
   width: 350px;
   height: 350px;
-} 
-
-.aboutUs-section img{
-  width: 550px;
-  height: 550px;
 }
 
-.aboutUs-section p{
+.aboutUs-section img {
+  width: 400px;
+  height: 400px;
+  /* object-fit: cover; */
+}
+
+.aboutUs-section p {
   max-width: 40%;
+  text-align: justify;
 }
 
-.footer{
+.footer {
   padding-block: 4em;
   background-color: darkcyan;
   color: white;
 }
 
-.footer p,h2{
+.footer p {
   text-align: center;
+}
+
+.service-card {
+  border: 5px solid var(--color-dark);
+  text-align: center;
+  padding: 1.5em;
+  max-width: 20%;
+}
+
+.service-card span svg {
+  width: 4em;
+  height: 4em;
+}
+
+.service-card:hover {
+  border-color: var(--color-primary);
+}
+
+.service-card span svg:hover {
+  stroke: var(--color-primary);
+}
+
+.input {
+  padding: 1em;
+  width: 100%;
+  background-color: var(--color-light);
+  color: var(--color-dark);
 }
