@@ -6,9 +6,9 @@ import Footer from "../components/landing/Footer";
 
 const LandingPage = () => {
   return (
-    <main>
+    <main id='home'>
       <Navbar />
-      <div className="flex container">
+      <div className=" hero-section flex container">
         <h1>
           Save your money ,<br /> Enjoy your life...
         </h1>
